@@ -54,6 +54,11 @@ export interface Activity {
   name: string;
   collaborationMode: CollaborationMode;
   humanExpertise: string;
+  description?: string;
+  keyConsiderations?: string[];
+  commonPitfalls?: string[];
+  aiCanHelp?: string[];
+  humanMustOwn?: string[];
 }
 
 export interface StageCouncilContent {
