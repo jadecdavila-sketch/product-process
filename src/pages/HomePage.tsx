@@ -5,15 +5,7 @@ import { RiverFlow } from '@/components/river/RiverFlow';
 import { StagePanel } from '@/components/stage/StagePanel';
 import { Button } from '@/components/ui/button';
 import { councils } from '@/data';
-
-const councilImages: Record<string, string> = {
-  architect: '/assets/Architect.png',
-  'midnight-responder': '/assets/Midnight Responder.png',
-  witness: '/assets/Witness.png',
-  questioner: '/assets/Questioner.png',
-  groundskeeper: '/assets/Groundskeeper.png',
-  'long-game': '/assets/Scale.png',
-};
+import { councilImages } from '@/lib/images';
 
 export function HomePage() {
   const { stageId } = useParams();

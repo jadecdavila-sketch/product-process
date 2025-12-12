@@ -4,15 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import type { Council } from '@/types';
 import { HelpCircle, Users } from 'lucide-react';
-
-const councilImages: Record<string, string> = {
-  architect: '/assets/Architect.png',
-  'midnight-responder': '/assets/Midnight Responder.png',
-  witness: '/assets/Witness.png',
-  questioner: '/assets/Questioner.png',
-  groundskeeper: '/assets/Groundskeeper.png',
-  'long-game': '/assets/Scale.png',
-};
+import { councilImages } from '@/lib/images';
 
 interface CouncilCardProps {
   council: Council;

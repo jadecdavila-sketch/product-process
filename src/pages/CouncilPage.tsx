@@ -24,15 +24,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import type { CouncilMember } from '@/types';
-
-const councilImages: Record<string, string> = {
-  architect: '/assets/Architect.png',
-  'midnight-responder': '/assets/Midnight Responder.png',
-  witness: '/assets/Witness.png',
-  questioner: '/assets/Questioner.png',
-  groundskeeper: '/assets/Groundskeeper.png',
-  'long-game': '/assets/Scale.png',
-};
+import { councilImages } from '@/lib/images';
 
 function MemberCard({ member, index }: { member: CouncilMember; index: number }) {
   return (

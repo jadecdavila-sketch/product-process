@@ -1,15 +1,7 @@
 import { motion } from 'framer-motion';
 import { getCouncilById } from '@/data';
 import type { StageCouncilContent } from '@/types';
-
-const councilImages: Record<string, string> = {
-  architect: '/assets/Architect.png',
-  'midnight-responder': '/assets/Midnight Responder.png',
-  witness: '/assets/Witness.png',
-  questioner: '/assets/Questioner.png',
-  groundskeeper: '/assets/Groundskeeper.png',
-  'long-game': '/assets/Scale.png',
-};
+import { councilImages } from '@/lib/images';
 
 interface CouncilVoiceProps {
   content: StageCouncilContent;
