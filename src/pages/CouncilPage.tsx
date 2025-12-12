@@ -235,7 +235,7 @@ export function CouncilPage() {
               variant="secondary"
               size="sm"
               asChild
-              className="bg-background/80 hover:bg-background/90 border-0 backdrop-blur-sm shadow-lg"
+              className="bg-background/90 hover:bg-background text-foreground border-0 backdrop-blur-sm shadow-lg"
             >
               <Link to="/councils" className="gap-2">
                 <ArrowLeft className="w-4 h-4" />

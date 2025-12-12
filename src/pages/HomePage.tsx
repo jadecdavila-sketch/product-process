@@ -68,7 +68,7 @@ export function HomePage() {
                 </motion.div>
               ))}
             </div>
-            <Button asChild size="sm" variant="default">
+            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-dark font-semibold shadow-lg hover:shadow-xl transition-all duration-300 px-6">
               <Link to="/councils">
                 Meet the Council
               </Link>
