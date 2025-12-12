@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import "@fontsource/montserrat/400.css";
+@import "@fontsource/montserrat/500.css";
+@import "@fontsource/montserrat/600.css";
+@import "@fontsource/montserrat/700.css";
+@import "@fontsource/montserrat/400-italic.css";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-warm: var(--warm);
+
+  /* Typography */
+  --font-sans: "Montserrat", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* Product Council Palette */
+  --background: #F5F1EA;          /* warm cream */
+  --foreground: #3A2A28;          /* dark brown */
+  --card: #FFFFFF;
+  --card-foreground: #3A2A28;
+  --popover: #FFFFFF;
+  --popover-foreground: #3A2A28;
+  --primary: #516C61;             /* forest */
+  --primary-foreground: #F5F1EA;
+  --secondary: #8C8C5A;           /* olive */
+  --secondary-foreground: #F5F1EA;
+  --muted: #E8E4DC;
+  --muted-foreground: #6B6B4A;
+  --accent: #D8B466;              /* gold */
+  --accent-foreground: #3A2A28;
+  --warm: #F0C2B4;                /* blush */
+  --destructive: #B54A32;
+  --border: #D4CFC5;
+  --input: #D4CFC5;
+  --ring: #516C61;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    margin: 0;
+  }
+}
