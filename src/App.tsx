@@ -5,7 +5,7 @@ import { CouncilPage } from '@/pages/CouncilPage';
 
 function App() {
   return (
-    <BrowserRouter basename="/product-process">
+    <BrowserRouter basename="/">
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="stage/:stageId" element={<HomePage />} />
