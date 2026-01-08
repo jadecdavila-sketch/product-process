@@ -29,7 +29,7 @@ export function CouncilsPage() {
           className="text-center mb-12"
         >
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            The Six Councils
+            The Six Councils of Product Greatness
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Each council has a distinct personality and voice. They appear when relevant,
